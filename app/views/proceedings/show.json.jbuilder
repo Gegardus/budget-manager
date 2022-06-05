@@ -1,1 +1,1 @@
-json.partial! "proceedings/proceeding", proceeding: @proceeding
+json.partial! 'proceedings/proceeding', proceeding: @proceeding

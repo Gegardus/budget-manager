@@ -1,1 +1,1 @@
-json.array! @proceedings, partial: "proceedings/proceeding", as: :proceeding
+json.array! @proceedings, partial: 'proceedings/proceeding', as: :proceeding
