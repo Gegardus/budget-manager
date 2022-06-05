@@ -12,10 +12,10 @@ require 'rails_helper'
 # of tools you can use to make these specs even more expressive, but we're
 # sticking to rails and rspec-rails APIs to keep things simple and stable.
 
-RSpec.describe "/users", type: :request do
+RSpec.describe "/categories", type: :request do
   
   # This should return the minimal set of attributes required to create a valid
-  # User. As you add validations to User, be sure to
+  # Category. As you add validations to Category, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
@@ -27,59 +27,59 @@ RSpec.describe "/users", type: :request do
 
   describe "GET /index" do
     it "renders a successful response" do
-      User.create! valid_attributes
-      get users_url
+      Category.create! valid_attributes
+      get categories_url
       expect(response).to be_successful
     end
   end
 
   describe "GET /show" do
     it "renders a successful response" do
-      user = User.create! valid_attributes
-      get user_url(user)
+      category = Category.create! valid_attributes
+      get category_url(category)
       expect(response).to be_successful
     end
   end
 
   describe "GET /new" do
     it "renders a successful response" do
-      get new_user_url
+      get new_category_url
       expect(response).to be_successful
     end
   end
 
   describe "GET /edit" do
     it "renders a successful response" do
-      user = User.create! valid_attributes
-      get edit_user_url(user)
+      category = Category.create! valid_attributes
+      get edit_category_url(category)
       expect(response).to be_successful
     end
   end
 
   describe "POST /create" do
     context "with valid parameters" do
-      it "creates a new User" do
+      it "creates a new Category" do
         expect {
-          post users_url, params: { user: valid_attributes }
-        }.to change(User, :count).by(1)
+          post categories_url, params: { category: valid_attributes }
+        }.to change(Category, :count).by(1)
       end
 
-      it "redirects to the created user" do
-        post users_url, params: { user: valid_attributes }
-        expect(response).to redirect_to(user_url(User.last))
+      it "redirects to the created category" do
+        post categories_url, params: { category: valid_attributes }
+        expect(response).to redirect_to(category_url(Category.last))
       end
     end
 
     context "with invalid parameters" do
-      it "does not create a new User" do
+      it "does not create a new Category" do
         expect {
-          post users_url, params: { user: invalid_attributes }
-        }.to change(User, :count).by(0)
+          post categories_url, params: { category: invalid_attributes }
+        }.to change(Category, :count).by(0)
       end
 
     
       it "renders a response with 422 status (i.e. to display the 'new' template)" do
-        post users_url, params: { user: invalid_attributes }
+        post categories_url, params: { category: invalid_attributes }
         expect(response).to have_http_status(:unprocessable_entity)
       end
     
@@ -92,26 +92,26 @@ RSpec.describe "/users", type: :request do
         skip("Add a hash of attributes valid for your model")
       }
 
-      it "updates the requested user" do
-        user = User.create! valid_attributes
-        patch user_url(user), params: { user: new_attributes }
-        user.reload
+      it "updates the requested category" do
+        category = Category.create! valid_attributes
+        patch category_url(category), params: { category: new_attributes }
+        category.reload
         skip("Add assertions for updated state")
       end
 
-      it "redirects to the user" do
-        user = User.create! valid_attributes
-        patch user_url(user), params: { user: new_attributes }
-        user.reload
-        expect(response).to redirect_to(user_url(user))
+      it "redirects to the category" do
+        category = Category.create! valid_attributes
+        patch category_url(category), params: { category: new_attributes }
+        category.reload
+        expect(response).to redirect_to(category_url(category))
       end
     end
 
     context "with invalid parameters" do
     
       it "renders a response with 422 status (i.e. to display the 'edit' template)" do
-        user = User.create! valid_attributes
-        patch user_url(user), params: { user: invalid_attributes }
+        category = Category.create! valid_attributes
+        patch category_url(category), params: { category: invalid_attributes }
         expect(response).to have_http_status(:unprocessable_entity)
       end
     
@@ -119,17 +119,17 @@ RSpec.describe "/users", type: :request do
   end
 
   describe "DELETE /destroy" do
-    it "destroys the requested user" do
-      user = User.create! valid_attributes
+    it "destroys the requested category" do
+      category = Category.create! valid_attributes
       expect {
-        delete user_url(user)
-      }.to change(User, :count).by(-1)
+        delete category_url(category)
+      }.to change(Category, :count).by(-1)
     end
 
-    it "redirects to the users list" do
-      user = User.create! valid_attributes
-      delete user_url(user)
-      expect(response).to redirect_to(users_url)
+    it "redirects to the categories list" do
+      category = Category.create! valid_attributes
+      delete category_url(category)
+      expect(response).to redirect_to(categories_url)
     end
   end
 end
