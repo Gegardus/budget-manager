@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'splash/new'
+  get 'splash/create'
   resources :proceedings
   resources :categories
 
