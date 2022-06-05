@@ -1,0 +1,16 @@
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.admin {
+  color: brown;
+  font-size: 2rem;
+  font-weight: 600;
+}
