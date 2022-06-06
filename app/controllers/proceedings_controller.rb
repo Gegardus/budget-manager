@@ -28,9 +28,9 @@ class ProceedingsController < ApplicationController
     respond_to do |format|
       if @proceeding.save
         format.html { redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully created.' }
-        # redirect_to category_path(id: @payment.category_id), notice: 'Payment was successfully created.'     
+        # redirect_to category_path(id: @payment.category_id), notice: 'Payment was successfully created.'
       else
-        format.html { render :new, status: :unprocessable_entity }        
+        format.html { render :new, status: :unprocessable_entity }
       end
     end
   end
@@ -39,10 +39,10 @@ class ProceedingsController < ApplicationController
   def update
     respond_to do |format|
       if @proceeding.update(proceeding_params)
-        format.html { redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully updated.' } 
-        # redirect_to @payment, notice: 'Payment was successfully updated.'       
+        format.html { redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully updated.' }
+        # redirect_to @payment, notice: 'Payment was successfully updated.'
       else
-        format.html { render :edit, status: :unprocessable_entity }        
+        format.html { render :edit, status: :unprocessable_entity }
       end
     end
   end
@@ -52,7 +52,7 @@ class ProceedingsController < ApplicationController
     @proceeding.destroy
 
     respond_to do |format|
-      format.html { redirect_to proceedings_url, notice: 'Proceeding was successfully destroyed.' }      
+      format.html { redirect_to proceedings_url, notice: 'Proceeding was successfully destroyed.' }
     end
   end
 

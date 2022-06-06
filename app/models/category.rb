@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  belongs_to :user  
+  belongs_to :user
   has_many :proceedings
 
   validates :name, presence: true, length: { maximum: 250 }
