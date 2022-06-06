@@ -1,8 +1,6 @@
 <p style="color: green"><%= notice %></p>
-
 <h1>Proceedings</h1>
-
-<div id="proceedings">
+<div id="proceedings"> 
   <% @proceedings.each do |proceeding| %>
     <%= render proceeding %>
     <p>
@@ -10,5 +8,4 @@
     </p>
   <% end %>
 </div>
-
 <%= link_to "New proceeding", new_proceeding_path %>
