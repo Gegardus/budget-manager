@@ -10,5 +10,11 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "categories#index"
+  unauthenticated do
+    root "splash#index"
+  end
+
+  authenticated :user do
+    root 'categories#index', as: :authenticated_root
+  end
 end
