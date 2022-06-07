@@ -74,5 +74,6 @@ group :test do
 end
 
 gem 'bootstrap'
+gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'simple_form'

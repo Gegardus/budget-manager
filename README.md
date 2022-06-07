@@ -21,6 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-[Heroku](https://intense-fjord-95027.herokuapp.com/)
+[Heroku](https://git.heroku.com/intense-fjord-95027.git)
 
 * ...
