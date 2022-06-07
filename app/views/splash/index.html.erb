@@ -1,2 +1,11 @@
-<h1>Splash#create</h1>
-<p>Find me in app/views/splash/create.html.erb</p>
+<section class="container mx-auto flex justify-center">
+  <div class="w-screen min-h-screen mx-3 py-3 text-center flex flex-col">
+    <div class="grow text-center flex justify-center items-center">
+      <div class="italic font-black text-3xl text-terciary">Payment Medium</div>
+    </div>
+    <div>
+      <div class="text-gray-300 font-light my-2"><%= link_to "LOG IN", new_user_session_path, class: "bg-primary hover:bg-blue-700 text-white block py-3 px-4 rounded-sm" %></div>
+      <div class="text-gray-300 font-light my-2"><%= link_to "SIGN UP", new_user_registration_path, class: "bg-primary hover:bg-blue-700 text-white block py-3 px-4 rounded-sm" %></div>
+    </div>
+  </div>
+</section>

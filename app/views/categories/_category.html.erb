@@ -1,17 +1,5 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
-  </p>
-
+<div id="<%= dom_id category %>" class="flex justify-between items-center m-3 p-3 bg-white text-terciary">
+  <%=image_tag category.icon, class: "w-16 h-16" %>
+  <h5 class="grow text-left px-3"><%= category.name %></h5>
+  <h5>$<%= category.proceedings.map {|proceeding| proceeding.amount}.sum %></h5>
 </div>

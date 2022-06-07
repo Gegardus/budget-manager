@@ -1,14 +1,12 @@
 <p style="color: green"><%= notice %></p>
-
-<h1>Proceedings</h1>
-
-<div id="proceedings">
+<h1>Transections</h1>
+<div id="proceedings"> 
   <% @proceedings.each do |proceeding| %>
     <%= render proceeding %>
     <p>
-      <%= link_to "Show this proceeding", proceeding %>
+      <%= link_to "Show this transaction", proceeding %>
     </p>
   <% end %>
 </div>
+<%= link_to "New transaction", new_proceeding_path %>
 
-<%= link_to "New proceeding", new_proceeding_path %>
