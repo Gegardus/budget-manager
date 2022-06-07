@@ -3,8 +3,9 @@ require 'rails_helper'
 RSpec.describe Proceeding, type: :model do
   before(:each) do
     @user = User.create(name: 'Vahan', email: 'vah@vah.com', password: 'password')
-    @category = Category.create(user: @user, name: 'Fruit', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_LyzUw19FDIeWU9lJIvb0A9fd95f6uHfmg&usqp=CAU')
-    @proceeding = Proceeding.create(category:  @category, name: 'Fruit', amount: 14)
+    @category = Category.create(user: @user, name: 'Fruit',
+                                icon: 'https://encrypted-tbn0.gstatic.com')
+    @proceeding = Proceeding.create(category: @category, name: 'Fruit', amount: 14)
   end
 
   it 'checks if transaction attributes are valid' do

@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe Category, type: :model do
   before(:each) do
     @user = User.create(name: 'Vahan', email: 'vah@vah.com', password: 'password')
-    @category = Category.create(user: @user, name: 'Fruit', icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_LyzUw19FDIeWU9lJIvb0A9fd95f6uHfmg&usqp=CAU')
+    @category = Category.create(user: @user, name: 'Fruit',
+                                icon: 'https://encrypted-tbn0.gstatic.com')
   end
 
   it 'checks if category attributes pass validation' do

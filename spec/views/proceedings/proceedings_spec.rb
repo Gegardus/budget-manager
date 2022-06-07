@@ -4,7 +4,7 @@ RSpec.describe 'Testing proceedings', type: :feature do
   before(:each) do
     @user = User.create(name: 'Name', email: 'name@example.com', password: '123456')
     @category = Category.create(name: 'Category',
-                                icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_LyzUw19FDIeWU9lJIvb0A9fd95f6uHfmg&usqp=CAU', user: @user)
+                                icon: 'https://encrypted-tbn0.gstatic.com', user: @user)
     @proceeding = Proceeding.create(name: 'Payment', amount: 200, category: @category)
 
     visit new_user_session_path

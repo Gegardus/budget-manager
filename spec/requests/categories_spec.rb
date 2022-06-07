@@ -5,7 +5,7 @@ RSpec.describe '/categories', type: :request do
     before(:each) do
       @user = User.create(name: 'Vahan', email: 'test@example.com', password: 'password')
       @category = Category.create(name: 'Category',
-                                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_LyzUw19FDIeWU9lJIvb0A9fd95f6uHfmg&usqp=CAU', user: @user)
+                                  icon: 'https://encrypted-tbn0.gstatic.com', user: @user)
       @proceeding = Proceeding.create(name: 'Payment', amount: 200, category: @category)
 
       post user_session_path, params: { user: { email: @user.email, password: @user.password } }
@@ -31,7 +31,7 @@ RSpec.describe '/categories', type: :request do
     before(:each) do
       @user = User.create(name: 'Ani', email: 'test@example.com', password: '123456')
       @category = Category.create(name: 'Test category',
-                                  icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_LyzUw19FDIeWU9lJIvb0A9fd95f6uHfmg&usqp=CAU', user: @user)
+                                  icon: 'https://encrypted-tbn0.gstatic.com', user: @user)
       @proceeding = Proceeding.create(name: 'Payment', amount: 200, category: @category)
 
       post user_session_path, params: { user: { email: @user.email, password: @user.password } }
