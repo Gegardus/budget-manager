@@ -17,22 +17,22 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+## Prerequisites
 
 - A text editor(preferably Visual Studio Code)
 
-### Install
+## Install
 
 - Ruby
 - Ruby on Rails
 - PostgresSQL
 - Rspec
 
-### Using it Locally
+## Using it Locally
 
 - Clone the project
 
-### Setup
+## Setup
 
 Install gems with:
 
@@ -48,7 +48,7 @@ rails db:migrate
 rails db:seed
 ```
 
-### Usage
+## Usage
 
 Start server with:
 
@@ -58,13 +58,13 @@ rails server
 
 Open http://localhost:3000/ in your browser.
 
-### Install linter
+## Install linter
 
 ```bash
 bundle install
 ```
 
-### Run tests
+## Run tests
 
 Install rspec with:
 
