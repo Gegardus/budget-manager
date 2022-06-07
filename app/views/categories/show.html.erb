@@ -3,7 +3,7 @@
     <%= link_to categories_path do %>
       <i class="fa-solid fa-arrow-left fa-xl "></i>
     <% end %>
-    <h5 class="font-light grow text-center">PROCEEDINGS</h5>
+    <h5 class="font-light grow text-center">TRANSACTIONS PER CATEGORY</h5>
   </div>
   <p class="text-green-500 p-3"><%= notice %></p>
   <div class="grow">
@@ -18,7 +18,7 @@
     <% end %>
     <h5 class="m-3 p-3 bg-white text-terciary text-center text-2xl">Total for <%= @category.name %>  $<%= @category.proceedings.map {|proceeding| proceeding.amount}.sum %></h5>
   </div>
-  <div class="bg-secondary p-4 text-center text-3xl text-white font-light">
-    <%= link_to "New Transaction", new_proceeding_path, class: "border border-white hover:bg-blue-700 block p-4 rounded" %>
+  <div class="bg-success p-4 text-center text-3xl text-white font-light">
+    <%= link_to "New Transaction", new_proceeding_path, class: "border border-white hover:opacity-50 block p-4 rounded" %>
   </div>
 <div>

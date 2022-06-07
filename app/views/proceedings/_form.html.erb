@@ -1,7 +1,7 @@
 <%= form_with(model: proceeding) do |form| %>
   <% if proceeding.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(proceeding.errors.count, "error") %> prohibited this proceeding from being saved:</h2>
+      <h2><%= pluralize(proceeding.errors.count, "error") %> prohibited this transaction from being saved:</h2>
 
       <ul>
         <% proceeding.errors.each do |error| %>
