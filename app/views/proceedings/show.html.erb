@@ -2,7 +2,10 @@
 <%= render @proceeding %>
 <%= @proceeding.category.id %>
 <div>
-  <%= link_to "Edit this transaction", edit_proceeding_path(@proceeding) %> |
-  <%= link_to "Back to transactions", proceedings_path %>
-  <%= button_to "Destroy this transaction", @proceeding, method: :delete %>
+  <ul>
+  <li><%= link_to "Back to categories", category_path(id: @proceeding.category_id) %></li>
+  <li><%= link_to "Edit this transaction", edit_proceeding_path(@proceeding) %></li>
+  <li><%= link_to "Back to transactions", proceedings_path %></li>
+  <li><%= button_to "Destroy this transaction", @proceeding, method: :delete %></li>
+  </ul>
 </div>
