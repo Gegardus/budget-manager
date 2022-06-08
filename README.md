@@ -89,7 +89,7 @@ rails exec rspec
 
 ## Clone Repo
 
-[Clone Repo](git@github.com:Gegardus/budget-manager.git)
+[Clone Repo](https://github.com/Gegardus/budget-manager.git)
 
 ## Author
 
