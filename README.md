@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[Heroku](https://pacific-castle-28636.herokuapp.com/)
+[Run if currently available](https://pacific-castle-28636.herokuapp.com/)
 
 ## Built With
 
@@ -89,7 +89,7 @@ rails exec rspec
 
 ## Clone Repo
 
-[Clone Repo](git@github.com:Gegardus/budget-manager.git)
+[Clone Repo](https://github.com/Gegardus/budget-manager.git)
 
 ## Author
 
