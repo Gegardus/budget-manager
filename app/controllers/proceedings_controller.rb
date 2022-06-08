@@ -27,8 +27,9 @@ class ProceedingsController < ApplicationController
 
     respond_to do |format|
       if @proceeding.save
-        format.html { redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully created.' }
-        # redirect_to category_path(id: @payment.category_id), notice: 'Payment was successfully created.'
+        format.html do
+          redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully transmitted.'
+        end
       else
         format.html { render :new, status: :unprocessable_entity }
       end
@@ -40,7 +41,6 @@ class ProceedingsController < ApplicationController
     respond_to do |format|
       if @proceeding.update(proceeding_params)
         format.html { redirect_to proceeding_url(@proceeding), notice: 'Proceeding was successfully updated.' }
-        # redirect_to @payment, notice: 'Payment was successfully updated.'
       else
         format.html { render :edit, status: :unprocessable_entity }
       end
