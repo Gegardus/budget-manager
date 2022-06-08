@@ -2,11 +2,15 @@
 
 # Budget-Manager
 
->  This Ruby on Rails capstone project is about building a mobile web application where user can manage his/her budget, having a list of transactions associated with a category, so that user can see how much money you spent and on what.
+> This Ruby on Rails capstone project is about building a mobile web application where user can manage his/her budget, having a list of transactions associated with a category, so that user can see how much money you spent and on what.
 
 ## Live Demo
 
 [Run if currently available](https://pacific-castle-28636.herokuapp.com/)
+
+## Video Presentation
+
+[Video link](https://www.loom.com/share/e85578cdf56e4f7cbfa041cb3f8666aa)
 
 ## Built With
 
@@ -77,6 +81,7 @@ and
 ```
 rails generate rspec:install
 ```
+
 run the test with:
 
 ```
@@ -114,6 +119,10 @@ Give a ⭐️ if you like this project!
 - A great thanks to my coding partners, morning session team, and standup team partners for their contribution.
 
 - The author highly appreciates the help in the project from all the participants of this week's program - my coding partners, morning session team, and standup team partners - for their contribution.
+
+- Microverse for inspiration.
+
+- Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 
 ## 📝 License
 
